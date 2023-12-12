@@ -1,0 +1,563 @@
+.hero {
+  // background-image: url(../images/required/decor/main/round-bg.svg);
+  // background-repeat: no-repeat;
+  // background-position: 150% 10%;
+  // z-index: 9999;
+  font-family: $primary-font;
+  min-width: 0;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.0);
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    position: relative;
+    width: 768px;
+    padding-left: 129px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 100px;
+    padding-bottom: 0;
+    min-width: 1200px;
+    padding-left: 367px;
+  }
+  .circle {
+    z-index: -1;
+    background: $accent-color;
+    width: 1000px;
+    height: 1500px;
+    position: absolute;
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    top: -400px;
+    right: -110px;
+    box-shadow: 0px 0px 40px 0px rgba(86, 86, 86, 0.40);
+  }
+}
+
+.hero__slider {
+
+  overflow: hidden;
+}
+
+.hero_advertisement--list {
+  
+  width: 100%;
+  display: flex;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.hero_advertisement--item {
+  z-index: 2;
+  display: flex;
+  flex-direction: column-reverse;
+  // min-width: 100%;
+
+  @media screen and (min-width: 768px) {
+    // justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    
+  }
+}
+
+.hero__sliderBox {
+  margin-left: 150px;
+  margin-top: 30px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 250px;
+    margin-left: 0px;
+    margin-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 635px;
+    margin-top: 0px;
+  }
+}
+
+.hero__sliderBox--title {
+  line-height: 1.17em;
+  font-size: 16px;
+  font-weight: 700;
+
+  &-color {
+    color: $accent-color;
+  }
+
+  margin-right: 70px;
+  @media screen and (min-width: 390px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+    font-size: 40;
+  }
+}
+
+.hero__sliderBox--descr {
+  line-height: 1.34em;
+  margin-bottom: 10px;
+  font-size: 8px;
+  margin-top: 5px;
+  margin-right: 20px;
+
+  &-color {
+    color: $accent-color;
+  }
+  @media screen and (min-width: 390px) {
+    margin-right: 70px;
+    font-size: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 15px;
+    margin-bottom: 40px;
+
+    font-size: 20px;
+  }
+}
+
+.hero__sliderBox--order {
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.hero__sliderBox--btn {
+  background-color: $accent-color;
+  border-color: transparent;
+  border-radius: 40px;
+  box-shadow: 0px 0px 40px 0px #5656564d;
+
+  line-height: 1.34em;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 7px 29px;
+  color: $light-font-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    padding: 7px 31px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    padding: 14px 68px;
+  }
+}
+
+.hero__sliderBox--price {
+  line-height: 1.34em;
+  font-size: 10px;
+  margin-top: 8px;
+  &-color {
+    line-height: 1em;
+    font-weight: 700;
+    font-size: 16px;
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 10px;
+    font-size: 12px;
+
+    &-color {
+      font-size: 18px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 30px;
+    font-size: 20px;
+
+    &-color {
+      margin-top: 0;
+      font-size: 35px;
+    }
+  }
+}
+
+.hero__slider--img {
+  border: 7px solid #f5faff;
+  display: block;
+  width: 37%;
+  border-radius: 50%;
+  position: relative;
+  top: -10%;
+  right: -50%;
+
+  @media screen and (min-width: 768px) {
+    position: static;
+    width: 293px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    width: 668px;
+  }
+}
+.hero__sliderbox--photoBox {
+  background-color: $accent-color;
+  margin-left: 100px;
+  min-height: 130px;
+  border-bottom-left-radius: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+// ------ modify elements -------
+
+.hero__sliderBox--title.second {
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 25px;
+  }
+}
+
+.hero__sliderBox--btn.third {
+  padding: 7px 20px;
+  @media screen and (min-width: 1200px) {
+    padding: 14px 31px;
+  }
+}
+
+.hero__sliderBox--title.third {
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+    margin-right: 60px;
+  }
+}
+
+.hero__sliderBox--price.third {
+  @media screen and (min-width: 1200px) {
+    text-align: center;
+    margin-left: 0;
+    width: 250px;
+  }
+}
+
+// foodConsturctor CSS table/desctop// ----------------------------------
+
+.hero__foodConstuctor--list {
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.hero__foodConstuctor--item {
+  box-shadow: 0px 0px 30px 0px #56565640;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: $light-font-color;
+  @media screen and (min-width: 768px) {
+    width: 41px;
+    height: 41px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.hero__foodConstructor--descr {
+  display: none;
+}
+
+.hero__foodConstuctor--item:hover,
+.hero__foodConstuctor--item:focus {
+  fill: $accent-color;
+  width: auto;
+  border-radius: 70px;
+  & .hero__foodConstructor--descr {
+    display: block;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  & .hero__foodConstuctor--btn {
+  font-family: $primary-font;
+top: -5px;
+    display: flex;
+    align-items: center;
+    color: $accent-color;
+
+  }
+  & .hero__foodConstuctor--btn-text {
+    display: none;
+  }
+}
+
+.hero__foodConstuctor--item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.hero__foodConstuctor--btn {
+  font-family: $primary-font;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: transparent;
+  &:first-child {
+    font-weight: 700;
+    line-height: 1.38em;
+    color: $primary-color;
+    @media screen and (min-width: 768px) {
+      font-size: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 20px;
+    }
+  }
+
+}
+
+.hero__foddConstructor--btn-box {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.hero__foodConstuctor--item:last-child {
+  @media screen and (min-width: 768px) {
+    & svg {
+      height: 11px;
+    }
+    & span {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1em;
+    }
+    @media screen and (min-width: 1200px) {
+      & svg {
+        height: 20px;
+      }
+      & span {
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 1em;
+      }
+    }
+  }
+}
+
+.hero__foodConstuctor--svg {
+  @media screen and (min-width: 768px) {
+    width: 25px;
+    height: 25px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 55px;
+    height: 40px;
+  }
+}
+
+// foodConsturctor CSS mobile// ----------------------------------
+
+.hero-foodConstuctor-positionBox {
+  z-index: 10;
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -100%);
+  background-color: #dee6ee;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: 57px;
+  margin: 0 auto;
+  height: 55px;
+
+  @media screen and (min-width: 380px) {
+    height: 70px;
+  }
+  @media screen and (min-width: 440px) {
+    height: 70px;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.hero__foodConstuctor--list-mob {
+  position: absolute;
+  // left: 50%;
+  right: 10%;
+
+  transform: translateX(-50%);
+  top: -40%;
+  transform: translateY(50%);
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.hero__foodConstuctor--item-mob {
+  justify-content: center;
+  align-items: center;
+  &:not(:last-child) {
+    margin-right: 8.5px;
+  }
+  &:first-child {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4;
+  }
+  @media screen and (min-width: 380px) {
+    &:first-child {
+      margin-right: 8px;
+    }
+  }
+  @media screen and (min-width: 440px) {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.hero__foodConstuctor--btn-mob {
+  border: none;
+  box-shadow: 0px 0px 30px 0px #56565640;
+  border-radius: 50%;
+  width: 41px;
+  height: 41px;
+  margin: 0 auto;
+  font-size: 10px;
+  line-height: 1.38em;
+  font-weight: 700;
+  @media screen and (min-width: 380px) {
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+  }
+  @media screen and (min-width: 440px) {
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    color: $accent-color;
+  }
+}
+
+.hero__foodConstuctor--svg-mob {
+  width: 28px;
+  height: 28px;
+  @media screen and (min-width: 380px) {
+    width: 28px;
+    height: 28px;
+  }
+  @media screen and (min-width: 440px) {
+    width: 37px;
+    height: 37px;
+  }
+}
+
+.hero__foodConstructor--descr-mob {
+  text-align: center;
+  font-size: 7px;
+  font-weight: 700;
+  line-height: 1.34em;
+  margin-top: 9px;
+}
+.marginTop {
+  margin-top: 5px;
+}
+
+// ------------------- decotation circle ------------
+
+// .hero__decoration {
+//   width: 162%;
+//   // height: (width);
+//   border-radius: 50%;
+//   background-color: $accent-color;
+//   z-index: 0;
+//   position: absolute;
+//   transform: translate(0%, -135%);
+//   // top: -50%;
+//   // left: 0px;
+//   @media screen and (min-width: 320px) {
+//     top: 85%;
+//     transform: translate(0%, -145%);
+//   }
+//   @media screen and (min-width: 480px) {
+//     transform: translate(0%, -115%);
+//   }
+// }
+// .hero__decoration::before {
+//   content: '';
+//   display: block;
+//   padding-top: 100%;
+// }
+
+// ------ slider navigation ---------
+
+.hero__sliderNav {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  &.is-hidden {
+    opacity: 1;
+  }
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    margin-top: 0;
+    top: 0px;
+    left: -230px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: static;
+    margin: 0 auto;
+    margin-right: 367px;
+    margin-top: 45px;
+  }
+}
+
+.swiper-button-prev {
+  padding-top: 3px;
+  margin-right: 20px;
+}
+.swiper-button-next {
+  padding-top: 3px;
+  margin-left: 20px;
+}
+.hero__sliderArrow--svg {
+  fill: $accent-color;
+}

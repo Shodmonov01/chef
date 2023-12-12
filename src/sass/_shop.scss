@@ -1,0 +1,156 @@
+.shop{
+
+
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-item {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #DEE6EE;
+  background-color: #DEE6EE;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 5px;
+  color: #020202;
+
+text-align: center;
+// font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+letter-spacing: 0.35px;
+}
+
+.pagination-arrow {
+font-size: 24px;
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.pagination-arrow:hover {
+  background-color: #eee;
+}
+
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 900px 40px 0;
+}
+
+.pagination-item,
+.pagination-arrow {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #64D370;
+  }
+
+  &.active {
+    background-color: #00ff51;
+    color: #fff;
+  }
+}
+
+.pagination-arrow:hover {
+  background-color: #eee;
+}
+
+
+.menu_container {
+  display: flex;
+
+  .menu_columb {
+    .shop_card {
+      padding-bottom: 70px;
+
+      .menu_img {}
+
+      .menu_title {
+        padding: 10px 25px 10px 25px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+      }
+
+      .menu_info {
+        padding: 10px 25px 10px 25px;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+
+        .menu_date {
+          color: #B5C2CE;
+
+          text-align: center;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 133.8%;
+          letter-spacing: 0.35px;
+        }
+
+        .menu_button {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          padding: 10px 30px;
+          border-radius: 190px;
+          border: 1.5px solid #64D370;
+          background-color: #F5FAFF;
+          cursor: pointer;
+
+
+          img {
+            width: 7px;
+            height: 10px;
+
+          }
+
+
+        }
+      }
+    }
+  }
+}
+
+.shop_card {
+  width: 380px;
+  height: 250px;
+
+  .menu_img {
+
+    width: 380px;
+    height: 200px;
+  }
+}
