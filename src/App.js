@@ -12,12 +12,9 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          
-					<Route path='/' element={<Main />} />
-					<Route path='/shop' element={<Shop />} />
-
+          <Route path='/' element={<Main />} />
+          <Route path='/shop' element={<Shop />} />
         </Routes>
-
         <Footer />
       </BrowserRouter>
     </>

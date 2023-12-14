@@ -1,9 +1,14 @@
 .main {
-  background-image: url(../../images/required/decor/main/round-bg.svg);
+  // background-image: url(../../images/required/decor/main/round-bg.svg);
   background-repeat: no-repeat;
   background-position: 260% -18%;
-  
-
+  position: relative;
+  .bgi {
+    top: -450px;
+    position: absolute;
+    right: -754px;
+    z-index: -1;
+  }
 }
 
 // .main__info_0 {
@@ -13,15 +18,14 @@
 //   // background-size: 300px;
 // }
 
-.main__info_
-{
-    background-image: url(../../images/required/decor/main/decor-img-1.png);
+.main__info_ {
+  background-image: url(../../images/required/decor/main/decor-img-1.png);
   background-repeat: no-repeat;
   background-position: 0% 10%;
   background-size: 300px;
 }
 
-.main__info_2{
+.main__info_2 {
   background-image: url(../../images/required/decor/main/decor-img-2.png);
   background-repeat: no-repeat;
   background-position: 100% 80%;

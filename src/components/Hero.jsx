@@ -42,6 +42,7 @@ function Hero() {
             // style={{ width: '800px', height: 'auto' }}
           >
             <Swiper
+            
               // style={{ width: '800px', height: 'auto' }}
               spaceBetween={50}
               slidesPerView={1}
